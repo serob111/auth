@@ -88,7 +88,6 @@ function App() {
               <div className="mt-4">
                 <CheckBox label="Show Password" />
               </div>
-
               <div class="text-sm  flex justify-between items-center">
                 <a
                   class="font-bold text-blue-500 py-2 px-2 rounded -ml-2 hover:bg-blue-50 hover:text-blue-700"
@@ -102,6 +101,21 @@ function App() {
               </div>
             </div>
           </form>
+        </div>
+        <div className="mt-1 md:w-[448px] flex justify-between  text-xs text-gray-500 w-full items-center">
+          <select class="cursor-pointer py-2.5 px-0   bg-transparent  dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer">
+            <option selected>English (United States)</option>
+            <option value="US">United States</option>
+            <option value="CA">Canada</option>
+            <option value="FR">France</option>
+            <option value="DE">Germany</option>
+          </select>
+          <div className="flex gap-4">
+            {" "}
+            <p>Help</p>
+            <p>Policy</p>
+            <p>Terms</p>
+          </div>
         </div>
       </div>
     </>
